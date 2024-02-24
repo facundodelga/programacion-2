@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1587679805 source:f:\progra2\colae\colae.c
+	<stdio.h>
+	<stdlib.h>
+	"ColaE.h"
+
+1587677606 f:\progra2\colae\colae.h
+

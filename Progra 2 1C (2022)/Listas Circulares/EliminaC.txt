@@ -1,0 +1,71 @@
+TListaC ant, act;
+if (*LC != NULL){
+	act = *LC;				//estoy en el ultimo nodo
+	do{
+		ant = act;
+		act = act->sig;
+	} while (act!= (*LC)  && CONDICION);
+	if (CONDICION){					//ENCUENTRO EL ELEMENTO EN LA LISTA
+		if(actC == *LC)				//elimino el ultimo (cabeza)
+			*LC = antC;					//cambio cabecera
+		antC->sig = actC->sig;		//el sig de ant es el sig de act
+		free(actC);						//libero memoria
+	}
+}
+
+
+
+//LC apunta al ultimo nodo//SE SUPONE QUE ESTA EL ELEMENTO
+void elimina(TListaC *LC){
+    TListaC antC,actC;
+    if (*LC !=NULL){
+        actC = *LC;				//estoy en el ultimo nodo
+        do{
+          antC = actC;
+          actC = actC->sig;
+        } while(actC != *LC)    //corto cuando llegue al ultimo o PONER CONDICION    
+        if(actC == *LC)			//elimino el ultimo (cabeza)
+            *LC = antC;				//cambio cabecera
+        antC->sig = actC->sig;		//el sig de ant es el sig de act
+        free(actC);					//libero memoria
+    }
+}
+
+void EliminaC(TListaC* LC, int elem, int* elimino)
+{
+    TListaC ant, act;
+    if (*LC != NULL){
+		act = *LC;				//estoy en el ultimo nodo
+        do{
+            ant = act;
+            act = act->sig;
+        } while (act!= (*LC)  && CONDICION);
+        if (CONDICION){					//ENCUENTRO EL ELEMENTO EN LA LISTA
+			if(actC == *LC)				//elimino el ultimo (cabeza)
+				*LC = antC;					//cambio cabecera
+			antC->sig = actC->sig;		//el sig de ant es el sig de act
+			free(actC);						//libero memoria
+        }
+    }
+}
+//LC apunta al primer nodo
+//elimina pos x//PUEDE MAL
+void elimina(TListaC *L, int x){
+    TListaC ant,act;
+    if (*L !=NULL){
+        int cont = 1;
+        ant = NULL;
+        act = *L;
+        while (act != *L && cont<x){
+            ant = act;//se produce el avance, el anterior es el actual
+            act = act->sig;//y el actual es el siguiente
+            cont++;
+        }
+        if (cont==x && x!=1)//entra si existe la posicion x y no es la primera posicion
+            ant->sig = act->sig;//el nodo anterior apunta al siguiente nodo
+        else//entra si es la primer posicion, cont=1=x porque no se modifica
+            *L = act->sig; //la cabecera apunta al segundo nodo
+        free(act);
+    }
+}
+

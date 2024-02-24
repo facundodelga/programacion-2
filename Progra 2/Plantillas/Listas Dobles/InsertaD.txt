@@ -1,0 +1,112 @@
+void insertaOrd (TListaD * LD, int x){
+	PnodoD nuevo, act;
+	nuevo = (PnodoD) malloc (sizeof(nodoD)); 
+	nuevo->dato = x;
+	
+	if (LD->pri == NULL || x < LD->pri->dato)){		//entro al principio
+		nuevo->ant = NULL;
+		nuevo->sig = LD->pri; 
+		if (LD->pri == NULL)){		//si la lista está vacía
+			LD->ult = nuevo;				//el ultimo es el nuevo
+		}else							//si no está vacíá
+			LD->pri->ant = nuevo;			//cambio anterior del segundo
+		LD->pri = nuevo;				//cambio cabeza
+	}
+	else{
+		act = LD->pri;
+		while (act != NULL && x > act->dato)			//avanzo hasta la posicion donde se encuentre
+				act=act->sig;
+		if (act == NULL){		//entro si entra al final
+			nuevo->sig = NULL;				//el siguiente es nulo
+			nuevo->ant = LD->ult;			//el anterior es el ultimo
+			LD->ult->sig = nuevo;			//es el siguiente del penultimo
+			LD->ult = nuevo;				//el nuevo es el ultimo
+		}else{							//entro en el medio
+			nuevo->ant = act->ant;			//asigno anterior
+			nuevo->sig = act;				//asigno siguiente
+			act->ant->sig = nuevo;			//cambio siguiente
+			act->ant = nuevo;				//cambio anterior
+		}
+	}
+}
+
+void insertaDoble(TListaD* ld,char dato) {
+    PnodoD nuevo;
+    nuevo = (PnodoD)malloc(sizeof(nodoD));
+    nuevo->dato = dato;
+	if(ld->pri == NULL) {			//lista vacia
+		nuevo->ant = NULL;			//
+		ld->pri = nuevo;			
+    } else {						//inserto al final
+		nuevo->ant = (*ld).ult;
+		(*ld).ult->sig = nuevo;
+    }
+    nuevo->sig = NULL;				
+	(*ld).ult = nuevo;
+}
+
+void insertaOrd (TListaD * LD, int x){
+	PnodoD nuevo, act;
+	nuevo = (PnodoD) malloc (sizeof(nodoD)); 
+	nuevo->dato = x;
+	
+	if (LD->pri == NULL || x < LD->pri->dato)){		//entro al principio
+		nuevo->ant = NULL;
+		nuevo->sig = LD->pri; 
+		if (LD->pri == NULL)){		//si la lista está vacía
+			LD->ult = nuevo;				//el ultimo es el nuevo
+		}else							//si no está vacíá
+			LD->pri->ant = nuevo;			//cambio anterior del segundo
+		LD->pri = nuevo;				//cambio cabeza
+	}
+	else{
+		act = LD->pri;
+		if ( x > LD->ult->dato){		//entro si entra al final
+			nuevo->sig = NULL;				//el siguiente es nulo
+			nuevo->ant = LD->ult;			//el anterior es el ultimo
+			LD->ult->sig = nuevo;			//es el siguiente del penultimo
+			LD->ult = nuevo;				//el nuevo es el ultimo
+		}else{							//entro en el medio
+			while (x > act->dato)			//avanzo hasta la posicion donde se encuentre
+				act=act->sig;		
+			nuevo->ant = act->ant;			//asigno anterior
+			nuevo->sig = act;				//asigno siguiente
+			act->ant->sig = nuevo;			//cambio siguiente
+			act->ant = nuevo;				//cambio anterior
+		}
+	}
+}
+
+en lista doble si inserto al principio, al final, unico elemento o en el medio son casos
+suponiendo lista doble ordenada (unico caso q se pueden dar los 4)
+void inserta (TListaD *LD, TDato dato){
+	TListaD nuevo,ant,act;
+	nuevo = (PnodoD)malloc(sizeof(nodoD));
+	nuevo->dato = dato;
+	
+	if (LD->pri != NULL){			//si la lista no está vacía
+		if (LD->pri->dato < dato){		//inserto al principio
+			nuevo->sig = LD->pri;			//el siguiente es el anterior primero
+			nuevo->ant = NULL;				//el anterior esta vacio
+			LD->pri = nuevo;				//el nuevo es el primero
+		}else{							//no inserto al principio
+			act = LD->pri;
+			while(act->dato < dato)
+				act = act->sig;
+			nuevo->ant = act->ant;			//en ambos casos va a tener un anterior, ya que no es primero
+			if (act != NULL){			//inserto en el medio
+				nuevo->sig = sig;
+				act->ant = nuevo;
+			}else						//inserto al final
+				nuevo->sig = NULL;
+			ant->sig = nuevo;			//en ambos casos el siguiente al anterior es nuevo
+		}
+	}else{							//está vacía
+		nuevo->sig = NULL;
+		nuevo->ant = NULL;
+		LD->pri = LD->ult = nuevo;
+	}
+}
+
+
+

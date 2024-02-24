@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1665058279 source:c:\users\facundo\dropbox\progra 2\delgado\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pilaD.h"
+
+1665057907 c:\users\facundo\dropbox\progra 2\delgado\pilad.h
+
+1570815460 source:c:\users\facundo\dropbox\progra 2\delgado\pilad.c
+	<stdio.h>
+	<stdlib.h>
+	"PilaD.h"
+

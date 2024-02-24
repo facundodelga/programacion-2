@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1633547584 source:c:\users\facundo\documents\progra 2\tp6ej1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1632169867 c:\users\facundo\documents\progra 2\mis libs\pilasdinamicas.h
+
+1633473112 source:c:\users\facundo\documents\progra 2\mis libs\pilasdinamicas.c
+	<stdio.h>
+	<stdlib.h>
+	"PilasDinamicas.h"
+

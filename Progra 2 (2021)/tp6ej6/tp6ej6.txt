@@ -1,0 +1,23 @@
+River 30
+Armani 28 A 1
+Bologna 29 A 1
+Lux 39 S 1
+Maidana 35 A 1
+Zuculini 26 A 0
+Boca 21
+Rossi 24 A 1
+Fabra 26 A 1
+Varela 20 S 1
+Orsini 20 S 1
+Pavon 24 A 1
+Maradona 30 S 1
+Martinez 24 A 1
+Muria 28 A 0
+Racing 19
+Gomez 27 S 1
+Sigali 24 A 1
+Novillo 31 A 1
+Galvan 24 A 1
+Moreno 22 S 0
+
+

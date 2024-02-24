@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1664983708 source:c:\users\facundo\dropbox\progra 2\parcial20212c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"colaE.h"
+
+1664981429 c:\users\facundo\dropbox\progra 2\parcial20212c\colae.h
+
+1570815460 source:c:\users\facundo\dropbox\progra 2\parcial20212c\colae.c
+	<stdio.h>
+	<stdlib.h>
+	"ColaE.h"
+

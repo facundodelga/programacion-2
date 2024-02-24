@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1664889296 source:c:\users\facundo\dropbox\progra 2\parcial20152c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+	<string.h>
+
+1664664785 c:\users\facundo\dropbox\progra 2\parcial20152c\pila.h
+
+1570815454 source:c:\users\facundo\dropbox\progra 2\parcial20152c\pila.c
+	"pila.h"
+	<stdio.h>
+	<stdlib.h>
+

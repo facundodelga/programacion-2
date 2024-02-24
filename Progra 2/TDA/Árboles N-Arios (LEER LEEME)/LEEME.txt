@@ -1,0 +1,28 @@
+-NArios.h es el TDA que se usa en los ejercicios de las guías y los parciales. Están hechos así nomás así que usenlos solo para probar si andan sus programas.
+-La función Nulo solo necesita que le pasen la posición del nodo según la teoría de la cátedra, pero en mi versión también necesita que le pasen el árbol.
+ ACUERDENSE DE ESO PARA LOS EXÁMENES. (Pregunten si da lo mismo o lo tienen que hacer tal cuál como en la teoría)
+-La función Padre puede tardar más de lo normal porque es recursiva.
+-El tipo de dato de cada nodo del árbol lo define la linea "typedef int TElementoAN;" en NArios.h
+
+-DLCNArios.h son funciones extra para poder probar las soluciones al ejercicio 24 de la guía.
+-Para usar DLCNarios.h se importa en el main.c SOLO DLCNArios.h, que a la vez importa NArios.h. No importar NArios.h y DLCNArios.h a la vez porque no funciona. 
+ En la carpeta del proyecto tienen que NArios.h, NArios.c, DLCNArios.h y DLCNarios.c
+
+-No pregunté si estaba bien. Usar con precaución jajaja
+
+-----------------------------------------------
+
+Funciones:
+
+NArios.h:
+-int Vacio(TArbolN A);
+-int Nulo(TPos p, TArbolN A);
+-TPos HijoMasIzq(TPos p, TArbolN A);
+-TPos HnoDer(TPos p, TArbolN A);
+-TElementoAN Info(TPos p, TArbolN A);
+-TPos Raiz(TArbolN A);
+-TPos Padre(TPos p, TArbolN A);
+
+DLCNArios.h:
+-void GenerarArbol24a(TArbolN* A): Genera en A un árbol para el ejercicio 24 de la guía de árboles. La clave de cada nodo no-hoja es igual a su cantidad de hijos.
+-void GenerarArbol24b(TArbolN* A): Igual que el anterior, pero la clave de cada nodo no-hoja no es necesariamente igual a su cantidad de hijos.

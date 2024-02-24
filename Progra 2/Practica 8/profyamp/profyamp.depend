@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1668008092 source:c:\users\facundo\dropbox\progra 2\practica 8\profyamp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"PilaD.h"
+	"ColaD.h"
+
+1570815458 c:\users\facundo\dropbox\progra 2\practica 8\profyamp\pilad.h
+
+1668005895 c:\users\facundo\dropbox\progra 2\practica 8\profyamp\colad.h
+	<stdio.h>
+	<stdlib.h>
+
+1570815460 source:c:\users\facundo\dropbox\progra 2\practica 8\profyamp\pilad.c
+	<stdio.h>
+	<stdlib.h>
+	"PilaD.h"
+
+1668005932 source:c:\users\facundo\dropbox\progra 2\practica 8\profyamp\colad.c
+	<stdio.h>
+	<stdlib.h>
+	"ColaD.h"
+

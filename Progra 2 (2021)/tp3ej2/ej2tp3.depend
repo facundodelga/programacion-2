@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1631223727 source:c:\users\facundo\documents\progra 2\ej2tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"agendalib.h"
+
+1631222882 c:\users\facundo\documents\progra 2\ej2tp3\agendalib.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1631223655 source:c:\users\facundo\documents\progra 2\ej2tp3\agendafunct.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"agendalib.h"
+

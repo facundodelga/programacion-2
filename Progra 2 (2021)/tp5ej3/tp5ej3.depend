@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1632343960 source:c:\users\facundo\documents\progra 2\tp5ej3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilas.h"
+
+1632343960 source:c:\users\facundo\documents\progra 2\tp5ej3\pilas.c
+	<stdio.h>
+	<stdlib.h>
+	"pilas.h"
+
+1632343770 c:\users\facundo\documents\progra 2\tp5ej3\pilas.h
+

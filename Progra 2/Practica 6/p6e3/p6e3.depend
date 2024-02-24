@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663801434 source:c:\users\facundo\dropbox\progra 2\practica 6\p6e3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

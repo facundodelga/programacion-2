@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1632182628 source:c:\users\facundo\documents\progra 2\tp5ej2\tdaej2.c
+	<stdio.h>
+	<stdlib.h>
+	"TDAej2.h"
+
+1632182671 c:\users\facundo\documents\progra 2\tp5ej2\tdaej2.h
+
+1632182068 source:c:\users\facundo\documents\progra 2\tp5ej2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TDAej2.h"
+

@@ -1,0 +1,47 @@
+void Elimina(TLista *LD, int x){
+	if (LD->pri != NULL){
+		if (LD->pri == LD->ult && LD->pri->dato == x){	//unico elemento
+			free(LD->pri);
+			LD->pri = LD->ult = NULL;
+		}else{
+			act = LD->pri;
+			while (act != NULL && act->dato != x)
+				act = act->sig;
+			if (act == LD->pri){						//elimino primero
+				LD->pri = LD->pri->sig;
+				LD->pri->ant = NULL;
+				free(act);
+			}else
+				if (act == LD->ult){					//elimino ultimo
+					LD->ult = LD->ult->ant;
+					LD->ult->sig = NULL;
+					free(act);
+				}else{
+					if(act->dato == x){					//elimino del medio
+						act->ant->sig = act->sig;
+						act->sig->ant = act->ant;	
+						free(act);
+					}
+				}
+		}
+	}
+}
+
+
+if(LD->pri == LD->ult){					//eliminacion del unico elemeneto
+	LD->pri = NULL;							//el primero apunta a NULL
+	LD->ult = NULL;							//el ultimo apunta a NULL
+}else{
+	if (elimD->sig == NULL){ 			//eliminacion del ultimo
+		LD->ult = elimD->ant;				//el ultimo es el anterior
+		LD->ult->sig = NULL;				//el siguiente del nuevo ult es NULL
+	}else
+		if (elimD->ant == NULL){ 		//eliminacion del primero
+			LD->pri = elimD->sig;			//el nuevo primero es el sig del elim
+			LD->pri->ant = NULL;			//el anterior del pri es NULL
+		}else{ 							//eliminacion del cuerpo
+			elimD->ant->sig = elimD->sig;	//cambio sig del anterior
+			elimD->sig->ant = elimD->ant;	//cambio ant del siguiente
+		}
+}
+free(elimD);							//libero elimD

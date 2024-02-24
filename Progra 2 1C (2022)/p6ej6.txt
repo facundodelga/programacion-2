@@ -1,0 +1,29 @@
+
+1 River 30
+1 Armani 28 A
+1 Bologna 29 A
+1 Kux 39 S
+1 Maidana 35 A
+0 Zuculini 26 A
+1 Boca 21
+1 Rossi 24 A
+1 Fabra 26 A
+1 Varela 20 S
+1 Orsini 20 S
+1 Pavon 24 A
+1 Maradona 30 S
+1 Martinez 24 A
+0 Kuria 28 A
+1 Racing 18
+1 Gomez 27 S
+1 Sigali 24 A
+1 Novillo 31 A
+1 Galvan 24 A
+0 Moreno 22 S
+1 Aldosivi 18
+1 Lastra 24 A
+1 Kaka 18 S
+1 Kintana 34 A
+0 Roman 23 A
+
+

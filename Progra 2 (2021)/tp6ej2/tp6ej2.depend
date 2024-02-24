@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1633559141 source:c:\users\facundo\documents\progra 2\tp6ej2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ListasTp6Ej2.h"
+
+1633557516 c:\users\facundo\documents\progra 2\tp6ej2\listastp6ej2.h
+
+1633557614 source:c:\users\facundo\documents\progra 2\tp6ej2\listastp6ej2.c
+	<stdio.h>
+	<stdlib.h>
+	"ListasTp6Ej2.h"
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1662593401 source:c:\users\facundo\dropbox\progra 2\practica 4\p4e1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fraccion.h"
+
+1662592851 source:c:\users\facundo\dropbox\progra 2\practica 4\p4e1\fraccion.c
+	<stdlib.h>
+	<stdio.h>
+	"fraccion.h"
+
+1662589869 c:\users\facundo\dropbox\progra 2\practica 4\p4e1\fraccion.h
+

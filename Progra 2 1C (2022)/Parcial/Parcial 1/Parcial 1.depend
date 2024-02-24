@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1651855354 source:c:\users\facundo\desktop\parcial\parcial 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pila.h"
+
+1651849861 c:\users\facundo\desktop\parcial\parcial 1\pila.h
+

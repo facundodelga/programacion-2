@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1649288291 source:c:\progra 2\practica 5\ej1\p5ej1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilasEj1.h"
+
+1649288162 source:c:\progra 2\practica 5\ej1\p5ej1\pilasej1.c
+	"pilasEj1.h"
+	<stdlib.h>
+	<stdio.h>
+
+1649287344 c:\progra 2\practica 5\ej1\p5ej1\pilasej1.h
+
+1649290022 source:c:\progra 2\practica 5\p5ej1\pilasej1.c
+	"pilasEj1.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1649287344 c:\progra 2\practica 5\p5ej1\pilasej1.h
+
+1649963480 source:c:\progra 2\practica 5\p5ej1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilasEj1.h"
+	<string.h>
+
+1649963480 source:c:\progra 2\practica 5\p5ej3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilasEj1.h"
+	<string.h>
+
+1649287344 c:\progra 2\practica 5\p5ej3\pilasej1.h
+
+1649290022 source:c:\progra 2\practica 5\p5ej3\pilasej1.c
+	"pilasEj1.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+

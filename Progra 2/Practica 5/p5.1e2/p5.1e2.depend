@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1663202460 source:c:\users\facundo\dropbox\progra 2\practica 5\p5.1e2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ColaE.h"
+	"pila.h"
+
+1570815454 c:\users\facundo\dropbox\progra 2\practica 5\p5.1e2\colae.h
+
+1662759393 c:\users\facundo\dropbox\progra 2\practica 5\p5.1e2\pila.h
+
+1570815460 source:c:\users\facundo\dropbox\progra 2\practica 5\p5.1e2\colae.c
+	<stdio.h>
+	<stdlib.h>
+	"ColaE.h"
+
+1662758410 source:c:\users\facundo\dropbox\progra 2\practica 5\p5.1e2\pila.c
+	"pila.h"
+	<stdio.h>
+	<stdlib.h>
+

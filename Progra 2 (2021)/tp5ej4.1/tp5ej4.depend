@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1632430431 source:c:\users\facundo\documents\progra 2\tp5ej4.1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"colasTp5Ej4.1.h"
+
+1632426369 source:c:\users\facundo\documents\progra 2\tp5ej4.1\colastp5ej4.1.c
+	<stdio.h>
+	<stdlib.h>
+	"colasTp5Ej4.1.h"
+
+1632425311 c:\users\facundo\documents\progra 2\tp5ej4.1\colastp5ej4.1.h
+

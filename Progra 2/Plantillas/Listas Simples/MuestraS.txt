@@ -1,0 +1,17 @@
+//MUESTRA DE LOS ELEMENTOS DE LA LISTA DE FORMA LINEAL Y LIBERA A MEMORIA A MEDIDA QUE LO HACE
+
+while (L!=NULL){
+    printf("%d",(*L).dato);
+    TLista aux=L;
+    L=(*L).sig;
+    free(aux);
+}
+
+//MUESTRA DE LOS ELEMENTOS DE LA LISTA DE FORMA LINEAL (CARACTERES)
+
+void muestra (TLista L){
+    while (L!=NULL){
+        printf("%c \n",L->dato);
+        L=L->sig;
+    }
+}

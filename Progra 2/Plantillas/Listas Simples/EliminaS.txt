@@ -1,0 +1,49 @@
+//Dada una lista ordenada simplemente enlazada de enteros, eliminar X
+void elimina(TLista *L, int x){
+    TLista ant,act,elim; 
+	
+    if (*L != NULL){
+        if ((*L)->dato == x){ 			//elimino cabeza
+            elim = *L; 						//guardo direc
+            *L=(*L)->sig;					//la cabeza pasa a ser su sig
+            free(elim); 						//libero memoria
+        }
+		else{
+			act = *L;
+			while (act != NULL && x>act->dato){ //avanzo
+				ant = act;
+				act = act -> sig;
+			}
+			if (act != NULL && x == act->dato){ //elimino si encuentro
+				ant->sig = act->sig;				//el sig del ant es el sig de act
+				free(act);							//libero memoria
+			}
+		}
+	}
+}
+
+//elimina nodo en pos x
+void elimina(TLista *L, int x){
+    TLista ant,act;
+    if (*L !=NULL){
+        int cont = 1;
+        ant = NULL;
+        act = *L;
+
+        while (act != NULL && cont<x){//avanzo
+            ant = act;
+            act = act->sig;
+            cont++;
+        }
+        if (cont==x && x!=1) {
+			if (act != NULL){//elimino cuerpo
+				ant->sig = act->sig;
+				free(act);
+			}
+        }
+        else{//elimino cabecera
+            *L = act->sig;
+			free(act);
+        }
+    }
+}

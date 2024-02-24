@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1663804691 source:c:\users\facundo\dropbox\progra 2\practica 6\p6e5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"colaCircular.h"
+	"pilaD.h"
+
+1570815456 c:\users\facundo\dropbox\progra 2\practica 6\p6e5\colacircular.h
+
+1570815458 c:\users\facundo\dropbox\progra 2\practica 6\p6e5\pilad.h
+
+1570815460 source:c:\users\facundo\dropbox\progra 2\practica 6\p6e5\pilad.c
+	<stdio.h>
+	<stdlib.h>
+	"PilaD.h"
+
+1663802263 source:c:\users\facundo\dropbox\progra 2\practica 6\p6e5\colacircular.c
+	"colaCircular.h"
+	<stdlib.h>
+

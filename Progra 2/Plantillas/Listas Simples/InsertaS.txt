@@ -1,0 +1,44 @@
+//Insertar un dato en una lista ordenada simplemente enlazada de enteros
+void insertaOrd (TLista * L, int x){
+	TLista nuevo, ant, act;
+	nuevo = (TLista) malloc (sizeof(nodo)); 
+	nuevo->dato= x;
+	if (*L == NULL || x < (*L)->dato){	//si inserto en cabeza
+		nuevo->sig = *L; 					//el siguiente es la lista
+		*L = nuevo;							//la cabeza es el nuevo
+	}
+	else{
+		ant=NULL;
+		act=*L;
+		while (act != NULL && x> act->dato){	//inserto despues de cabeza
+			ant=act; 								//trabajo con ant
+			act=act->sig;
+		}
+		nuevo->sig=act;								//el sig de nuevo es act
+		ant->sig=nuevo;								//el sig de ant es nuevo
+	}
+}
+
+//INGRESO DE CARACTERES A LA LISTA AL PRINCIPIO DE LA LISTA
+void Ingreso(TLista *L){
+    /*char c;
+    TLista aux,ult;
+    printf("Ingrese elementos(0 para terminar): ");
+    c=getchar();
+        while(c!='0'){*/
+            aux=(TLista)malloc(sizeof(nodo));
+            aux->dato=c;
+			aux->sig=NULL;
+			if (*L == NULL){
+				*L = aux;
+				ult = aux;
+			}
+			else{
+				ult->sig = aux;
+				ult = aux;
+			}
+            /*printf("\nIngrese elementos(0 para terminar): ");
+            getchar();
+            c=getchar();
+        }*/
+}

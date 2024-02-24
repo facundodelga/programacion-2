@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1651441190 source:c:\progra 2\1er parcial 2015\1er parcial 2015-2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

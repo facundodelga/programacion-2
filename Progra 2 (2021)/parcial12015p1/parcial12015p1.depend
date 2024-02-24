@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1632169015 source:c:\users\facundo\documents\progra 2\mis libs\pilasestaticas.c
+	<stdio.h>
+	"PilasEstaticas.h"
+
+1634235907 c:\users\facundo\documents\progra 2\mis libs\pilasestaticas.h
+
+1634236900 source:c:\users\facundo\documents\progra 2\parcial12015p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"C:\Users\facundo\Documents\Progra 2\mis libs\PilasEstaticas.h"
+

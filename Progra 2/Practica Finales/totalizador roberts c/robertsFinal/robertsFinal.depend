@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1674739262 source:c:\users\facundo\dropbox\progra 2\practica finales\totalizador roberts c\robertsfinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

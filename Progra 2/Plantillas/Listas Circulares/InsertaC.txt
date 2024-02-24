@@ -1,0 +1,115 @@
+TListaC nuevo, act, ant;
+nuevo = (TListaC) malloc (sizeof(nodo));
+nuevo->dato = dato;
+if ((*LC) == NULL) {			//la lista está vacía
+	(*LC) = nuevo;					//la cabeza es el nuevo
+	nuevo->sig = nuevo;				//el nuevo apunta a sí mismo
+}else{
+	if (nuevo->dato > (*LC)->dato) { 	//inserto en cabecera (final)
+		nuevo->sig = (*LC)->sig;			//el sig es el sig del ult(cabeza)
+		(*LC)->sig = nuevo;					//el sig del ult es el nuevo
+		(*LC) = nuevo ;						//el nuevo es cabecera
+	}else{								//inserto en el medio
+		ant = (*LC);
+		act = (*LC)->sig;
+		while (nuevo->dato < (*LC)->dato){	//avanzo
+			ant = act;
+			act = act->sig;
+		}
+		ant->sig = nuevo;					//el sig del ant es el nuevo
+		nuevo->sig = act;					//el sig del nuevo es act
+	}
+}
+
+
+void Ingreso(TListaC *LC){
+    /*char c;
+    TListaC aux,ult;
+    printf("Ingrese elementos(0 para terminar): ");
+    c=getchar();
+    while(c!='0'){*/
+		nuevo=(TListaC)malloc(sizeof(nodo));
+        nuevo->dato=c;
+		if(*LC == NULL){//inserto cabecera
+           *LC = nuevo;
+           (*LC)->sig = *LC;
+        }
+        else{
+            nuevo->sig = (*LC)->sig;
+            (*LC)->sig = nuevo;
+            *LC = nuevo;
+        }
+
+        /*printf("\nIngrese elementos(0 para terminar): ");
+        getchar();
+        c=getchar();
+	}*/
+}
+
+//SE TIENE UNA LISTA CIRCULAR ORDENADA QUE ALMACENA PALABRAS Y FRECUENCIA DE APARICION DE CADA UNA DE ELLAS
+//A) INSERTAR PALABRA A LA LISTA
+//B) ELIMINAR PALABRA
+typedef struct nodo {
+    int cant;
+    char palabra [15];
+    struct nodo * sig;} nodo;
+
+typedef struct nodo * TListaC;
+
+void insertaPal ( TListaC *LC, char *cad){
+	TListaC nuevo, aux, ant;
+	nuevo = (TListaC) malloc (sizeof (nodo));
+	strcpy(nuevo->palabra,cad);
+	nuevo->cant= 1;
+	if ((*LC)== NULL) {
+		(*LC) = nuevo;
+		nuevo->sig = nuevo;
+	}
+	else
+		if (strcmp(cad,(*LC)->palabra)>0) { //inserto en cabecera
+			nuevo->sig = (*LC)->sig;
+			(*LC)->sig = nuevo;
+			(*LC) = nuevo ;
+		}
+		else {
+			ant = (*LC);
+			aux = (*LC)->sig;
+			while (aux!=(*LC) && strcmp(cad, aux->palabra) >0) {//avanzo
+				ant = aux;
+				aux = aux->sig;
+			}
+			if (strcmp(cad,aux->palabra)==0) {
+				free(nuevo);
+				aux->cant ++;
+			}
+			else {
+				ant-> sig = nuevo;
+				nuevo->sig = aux;
+			}
+		}
+}
+MISMO GENERAL
+	TListaC nuevo, act, ant;
+	nuevo = (TListaC) malloc (sizeof (nodo));
+	strcpy(nuevo->palabra,cad);
+	if ((*LC) == NULL) {			//la lista está vacía
+		(*LC) = nuevo;					//la cabeza es el nuevo
+		nuevo->sig = nuevo;				//el nuevo apunta a sí mismo
+	}else{
+		if (nuevo->dato > (*LC)->dato) { 	//inserto en cabecera (final)
+			nuevo->sig = (*LC)->sig;			//el sig es el sig del ult(cabeza)
+			(*LC)->sig = nuevo;					//el sig del ult es el nuevo
+			(*LC) = nuevo ;						//el nuevo es cabecera
+		}else{								//inserto en el medio
+			ant = (*LC);
+			act = (*LC)->sig;
+			while (nuevo->dato < (*LC)->dato){	//avanzo
+				ant = act;
+				act = act->sig;
+			}
+			ant->sig = nuevo;					//el sig del ant es el nuevo
+			nuevo->sig = act;					//el sig del nuevo es act
+		}
+	}
+		
+	

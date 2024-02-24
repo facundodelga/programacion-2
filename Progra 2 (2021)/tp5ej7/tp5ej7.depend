@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1632346484 source:c:\users\facundo\documents\progra 2\tp5ej7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"PilasDinamicas.h"
+
+1632169867 c:\users\facundo\documents\progra 2\mis libs\pilasdinamicas.h
+
+1632169867 c:\users\facundo\documents\progra 2\tp5ej7\pilasdinamicas.h
+
+1632346293 source:c:\users\facundo\documents\progra 2\tp5ej7\pilasdinamicas.c
+	<stdio.h>
+	<stdlib.h>
+	"PilasDinamicas.h"
+
+1632346484 source:c:\progra 2 (2021)\tp5ej7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"PilasDinamicas.h"
+
+1632169867 c:\progra 2 (2021)\tp5ej7\pilasdinamicas.h
+
+1632346293 source:c:\progra 2 (2021)\tp5ej7\pilasdinamicas.c
+	<stdio.h>
+	<stdlib.h>
+	"PilasDinamicas.h"
+

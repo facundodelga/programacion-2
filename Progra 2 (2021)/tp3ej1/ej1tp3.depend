@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1631134561 source:c:\users\facundo\documents\progra 2\ej1tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fracciones.h"
+
+1631135929 source:c:\users\facundo\documents\progra 2\ej1tp2\fracciones.c
+	"fracciones.h"
+	<stdio.h>
+	<stdlib.h>
+
+1631133200 c:\users\facundo\documents\progra 2\ej1tp2\fracciones.h
+
+1631136026 source:c:\users\facundo\documents\progra 2\ej1tp3\fracciones.c
+	"fracciones.h"
+	<stdio.h>
+	<stdlib.h>
+
+1631133200 c:\users\facundo\documents\progra 2\ej1tp3\fracciones.h
+
+1631134561 source:c:\users\facundo\documents\progra 2\ej1tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fracciones.h"
+

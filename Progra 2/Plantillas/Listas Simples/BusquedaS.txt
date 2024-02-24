@@ -1,0 +1,21 @@
+Dada una lista simplemente enlazada de cadenas, verificar si X está
+
+int esta (TLista L, char *x)
+{
+	TLista aux; 
+	aux = L;
+	while (aux != NULL && strcmp(x,aux->dato) !=0)
+		aux = aux -> sig;
+	return aux != NULL;
+}
+
+Dada una lista simplemente enlazada ordenada de cadenas, verificar si X está
+
+int estaOrd (TLista L, char *x)
+{
+	TLista aux;
+	aux = L;
+	while (aux != NULL && strcmp(x, aux->dato) > 0)
+		aux = aux -> sig;
+	return aux != NULL && strcmp(x, aux->dato) == 0;
+}

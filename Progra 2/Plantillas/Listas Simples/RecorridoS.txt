@@ -1,0 +1,20 @@
+Dada una lista simplemente enlazada de cadenas, retornar la cantidad que tienen longitud par
+
+typedef struct nodo {
+char dato[15];
+struct nodo * sig;} nodo;
+
+typedef struct nodo * TLista;
+
+int CantPares (TLista L)
+{
+	TLista aux;
+	int cont = 0;
+	aux = L;
+	while (aux != NULL){
+		if (!(strlen(aux-> dato) % 2))
+			cont++;
+		aux = aux -> sig;
+	}
+	return cont;
+}

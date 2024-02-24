@@ -1,0 +1,77 @@
+typedef struct nodoD {
+    char dato;
+    struct nodoD *ant, * sig;} nodoD;
+	
+typedef struct nodoD * PnodoD;
+
+typedef struct {
+    PnodoD pri, ult;} TListaD;
+
+void Ingreso(TListaD *LD){
+    PnodoD nuevo;
+    /*char c;
+
+    (*LD).pri=NULL;
+    (*LD).ult=NULL;
+    printf("Ingrese elementos(0 para terminar): ");
+    c=getchar();
+    while(c!='0')
+    {*/
+        nuevo = (PnodoD) malloc (sizeof(nodoD));
+        nuevo->dato = c;
+        if ((*LD).pri == NULL) { //inserto cabecera
+            nuevo->sig = NULL;
+            nuevo->ant = NULL;
+            (*LD).ult = nuevo;
+            (*LD).pri = nuevo;
+        }
+        else{ //inserto al final
+            nuevo->ant = (*LD).ult;
+            nuevo->sig = NULL;
+            (*LD).ult->sig = nuevo;
+            (*LD).ult = nuevo;
+        }
+        /*printf("\nIngrese elementos(0 para terminar): ");
+        getchar();
+        c=getchar();*/
+    }
+}
+//generacion de lista doble a partir de simple
+void arma (TListaD *LD , TLista L){
+    TLista aux; 
+    PnodoD nuevo, act;
+    
+    aux = L;
+    (*LD).pri=NULL;
+    (*LD).ult=NULL;
+    while (aux != NULL) {
+        nuevo = (PnodoD) malloc (sizeof(nodoD));
+        nuevo->num = aux->num;
+        if ((*LD).pri == NULL || nuevo->num < (*LD).pri->num) {
+            nuevo->sig = (*LD).pri;
+            nuevo->ant = NULL;
+            if ((*LD).pri == NULL)
+                (*LD).ult = nuevo;
+            else
+                (*LD).pri->ant = nuevo;
+            (*LD).pri = nuevo;
+        }
+        else
+            if (nuevo->num > (*LD).ult->num) {
+                nuevo->ant = (*LD).ult;
+                nuevo->sig = NULL;
+                (*LD).ult->sig = nuevo;
+                (*LD).ult = nuevo;
+            }
+            else {
+                act = (*LD).pri;
+                while (nuevo->num > act->num)
+                    act= act->sig;
+                nuevo->sig = act;
+                nuevo->ant = act->ant;
+                act->ant->sig = nuevo;
+                act->ant = nuevo;
+            }
+        aux = aux->sig;  
+    }
+}

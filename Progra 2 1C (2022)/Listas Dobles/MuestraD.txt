@@ -1,0 +1,10 @@
+//MUESTRA DE LOS ELEMENTOS DE LA LISTA DE FORMA LINEAL
+void muestra (TListaD LD)
+{
+    PnodoD aux;
+    aux = LD.pri;
+    while (aux!=NULL){
+        printf("%c \n",aux->dato);
+        aux=aux->sig;
+    }
+}

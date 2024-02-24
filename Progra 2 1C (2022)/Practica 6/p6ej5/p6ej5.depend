@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1651275429 source:c:\progra 2\practica 6\p6ej5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Cola.h"
+	"C:\Progra 2\mis libs\PilasDinamicas.h"
+
+1633724000 c:\progra 2\mis libs\colascirculares.h
+
+1632169867 c:\progra 2\mis libs\pilasdinamicas.h
+
+1633723990 source:c:\progra 2\mis libs\colascirculares.c
+	"ColasCirculares.h"
+	<stdlib.h>
+	<stdio.h>
+
+1651275301 source:c:\progra 2\mis libs\pilasdinamicas.c
+	<stdio.h>
+	<stdlib.h>
+	"PilasDinamicas.h"
+
+1651275329 c:\progra 2\practica 6\p6ej5\cola.h
+
+1651275338 source:c:\progra 2\practica 6\p6ej5\cola.c
+	"Cola.h"
+

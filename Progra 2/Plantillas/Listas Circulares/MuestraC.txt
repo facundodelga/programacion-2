@@ -1,0 +1,10 @@
+void muestra (TListaC L)//MUESTRA DE LOS ELEMENTOS DE LA LISTA DE FORMA LINEAL{
+    TListaC aux = L;
+    if (aux != NULL){
+        do{
+            aux=aux->sig;
+			printf("%c \n",aux->dato);
+        }
+        while (aux != L);
+    }
+}

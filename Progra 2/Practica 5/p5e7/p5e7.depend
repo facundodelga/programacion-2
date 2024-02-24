@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1662760167 source:c:\users\facundo\dropbox\progra 2\practica 5\p5e7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+
+1662758389 d:\progra 2\pila.h
+
+1662758389 c:\users\facundo\dropbox\progra 2\practica 5\p5e7\pila.h
+
+1662758410 source:c:\users\facundo\dropbox\progra 2\practica 5\p5e7\pila.c
+	"pila.h"
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,32 @@
+River 30
+Armani 28 A
+Bologna 29 A
+Lux 39 S
+Maidana 35 A
+Zuculini 26 A
+Fin
+Boca 21
+Rossi 24 A
+Fabra 26 A
+Varela 20 S
+Orsini 20 S
+Pavon 24 A
+Maradona 30 S
+Martinez 24 A
+Muria 28 A
+Fin
+Racing 19
+Gomez 27 S
+Sigali 24 A
+Novillo 31 A
+Galvan 24 A
+Moreno 22 S
+Fin
+Independiente 30
+Moyano 22 S
+Bufarreta 19 A
+Viola 25 A
+Travelo 30 A
+Roberto 19 S
+
+

@@ -1,0 +1,58 @@
+//lista simple
+typedef struct nodito {
+    int nEmpresa;//ordenado, 0-49
+    char fecha[9];//aaaammdd
+    char recert;//S/N
+    struct nodito * sig;} nodito;
+
+typedef struct nodito * SubLista;
+
+typedef struct nodo {
+    int norma;//ordenado, 0-19(venia ordenado)
+    char nombre[9];
+    int cantEmpresas;
+    struct nodo * sig;
+    SubLista sub;} nodo;
+
+typedef struct nodo * TLista;
+
+void carga(TLista *L)
+{
+    FILE * arch;
+    TLista ult;
+    SubLista subN,subAnt,subAct;
+    int norma,cantE;
+    char nombre[9];
+    arch=fopen("CARGACTUAL.txt","rt");
+
+    while (fscanf(arch,"%d %s %d ",&norma,nombre,&cantE)==3){
+        if (*L == NULL)
+            *L = ult = (TLista) malloc(sizeof(nodo));
+        else
+        {
+            ult->sig = (TLista) malloc(sizeof(nodo));
+            ult = ult->sig;
+        }
+        ult->norma = norma;
+        strcpy(ult->nombre,nombre);
+        ult->cantEmpresas = cantE;
+        ult->sub = NULL;
+        ult->sig = NULL;
+        for (int i=0;i<cantE;i++){
+            subN = (SubLista) malloc(sizeof(nodito));
+            fscanf(arch,"%d %s %c ",&(subN->nEmpresa),subN->fecha,&(subN->recert));
+            subAnt = NULL;
+            subAct = ult->sub;
+            while (subAct != NULL && subN->nEmpresa > subAct->nEmpresa){
+                subAnt = subAct;
+                subAct = subAct->sig;
+            }
+            subN->sig = subAct;
+            if (subAnt==NULL)
+                ult->sub = subN;
+            else
+                subAnt->sig = subN;
+        }
+    }
+    fclose(arch);
+}

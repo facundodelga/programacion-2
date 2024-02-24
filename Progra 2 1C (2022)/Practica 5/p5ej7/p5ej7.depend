@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1584205420 source:c:\progra 2\practica 5\ej7\p5ej7\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1649967983 source:c:\progra 2\practica 5\p5ej7\pilasej7.c
+	<stdio.h>
+	<stdlib.h>
+	"pilasEj7.h"
+
+1649964664 c:\progra 2\practica 5\p5ej7\pilasej7.h
+
+1649969817 source:c:\progra 2\practica 5\p5ej7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilasEj7.h"
+

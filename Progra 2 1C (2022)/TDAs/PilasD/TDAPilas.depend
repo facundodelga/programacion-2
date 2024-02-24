@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1587222673 source:f:\progra2\tdapilas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TDAPilas.h"
+
+1587079054 f:\progra2\tdapilas\tdapilas.h
+
+1587225124 source:f:\progra2\tdapilas\tdapilas.c
+	<stdio.h>
+	<stdlib.h>
+	"TDAPilas.h"
+
